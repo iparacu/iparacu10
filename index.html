@@ -40,6 +40,34 @@
       </div>
     </div>
   </nav>
+  
+  <div class="container">
+    <h1>Formulario de Contacto</h1>
+    <form>
+      <!-- Campo de nombre -->
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" required>
+      </div>
+      <!-- Campo de correo electrónico -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico:</label>
+        <input type="email" class="form-control" id="email" placeholder="Introduce tu correo electrónico" required>
+      </div>
+      <!-- Campo de asunto -->
+      <div class="mb-3">
+        <label for="asunto" class="form-label">Asunto:</label>
+        <input type="text" class="form-control" id="asunto" placeholder="Introduce el asunto" required>
+      </div>
+      <!-- Campo de mensaje -->
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje:</label>
+        <textarea class="form-control" id="mensaje" rows="5" placeholder="Introduce tu mensaje" required></textarea>
+      </div>
+      <!-- Botón de enviar -->
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
   <div class="d-block justify-content-center">
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
