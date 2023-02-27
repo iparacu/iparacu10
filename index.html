@@ -11,8 +11,6 @@
 
   <!-- Scripts de Bootstrap 5 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Script personalizado -->
-  <script src="script.js"></script>
 </head>
 <body>
  <!-- Navbar -->
@@ -29,45 +27,44 @@
             <a class="nav-link" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#formulario">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portafolio</a>
+            <a class="nav-link" href="#carousel">Portafolio</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <div class="container">
-    <h1>Formulario de Contacto</h1>
-    <form>
-      <!-- Campo de nombre -->
-      <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre:</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" required>
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="https://m.media-amazon.com/images/I/51h3OUlY1oL._AC_.jpg" alt="" width="75" height="125">
+    <h1 class="display-5 fw-bold">Real Zaragoza</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Este es el hero del Real Zaragoza</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Real</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Zaragoza</button>
       </div>
-      <!-- Campo de correo electrónico -->
-      <div class="mb-3">
-        <label for="email" class="form-label">Correo Electrónico:</label>
-        <input type="email" class="form-control" id="email" placeholder="Introduce tu correo electrónico" required>
-      </div>
-      <!-- Campo de asunto -->
-      <div class="mb-3">
-        <label for="asunto" class="form-label">Asunto:</label>
-        <input type="text" class="form-control" id="asunto" placeholder="Introduce el asunto" required>
-      </div>
-      <!-- Campo de mensaje -->
-      <div class="mb-3">
-        <label for="mensaje" class="form-label">Mensaje:</label>
-        <textarea class="form-control" id="mensaje" rows="5" placeholder="Introduce tu mensaje" required></textarea>
-      </div>
-      <!-- Botón de enviar -->
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+    </div>
   </div>
+    <!-- Card -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <img src="https://image.ondacero.es/clipping/cmsimages01/2022/06/23/DB192184-AE37-48A8-949E-4C27A5889E15/real-zaragoza-presenta-campana-abonados-temporada-2223_97.jpg?crop=1097,617,x0,y73&width=1600&height=900&optimize=high&format=webply"class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Acerca de nosotros</h5>
+              <p class="card-text">Somos un club comprometido con nuestra aficion</p>
+              <a href="#formulario" class="btn btn-primary">¡Contáctanos!</a>
+            </div>
+          </div>
+        </div>
+        
+    <!-- Carrusel -->
   <div class="d-block justify-content-center">
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel slide" data-bs-ride="carousel">
+      <form id="carousel"></form>
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -94,6 +91,37 @@
         </button>
     </div>
 </div>
+<div class="container" >
+  <form id="formulario"></form>
+  <h2>Formulario de Contacto</h2>
+  <form>
+    <!-- Campo de nombre -->
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" required>
+    </div>
+    <!-- Campo de correo electrónico -->
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo Electrónico:</label>
+      <input type="email" class="form-control" id="email" placeholder="Introduce tu correo electrónico" required>
+    </div>
+    <!-- Campo de asunto -->
+    <div class="mb-3">
+      <label for="asunto" class="form-label">Asunto:</label>
+      <input type="text" class="form-control" id="asunto" placeholder="Introduce el asunto" required>
+    </div>
+    <!-- Campo de mensaje -->
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje:</label>
+      <textarea class="form-control" id="mensaje" rows="5" placeholder="Introduce tu mensaje" required></textarea>
+    </div>
+    <!-- Botón de enviar -->
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+<!-- Importar Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js"></script>
+  <!-- Footer -->
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
   <div class="col-md-4 d-flex align-items-center">
     <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -101,7 +129,5 @@
     </a>
     <span class="mb-3 mb-md-0 text-muted">© 2022 Compañia, Inc</span>
   </div>
-<!-- Importar Bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
